@@ -1,0 +1,23 @@
+ROHANSWEB SPECIAL ACCESS — PRIVATE ADMIN TEMPLATE
+=================================================
+IMPORTANT: Do not put real access codes in a public GitHub repository.
+This file is a template only. The website is designed to verify credentials
+through a private HTTPS authentication server, not by reading this file.
+
+FORMAT (one account per line):
+username | display name | call code | access code | status
+
+EXAMPLE PLACEHOLDER — NOT A VALID LOGIN:
+example_user | Example User | REPLACE_CALL_CODE | REPLACE_ACCESS_CODE | disabled
+
+ADMIN CHECKLIST:
+1. Make this GitHub repository PRIVATE before adding any real credentials.
+2. Keep this file on a private server or outside the website's public directory.
+3. Store access codes as salted password hashes on the server; never in index.html.
+4. Verify all three submitted fields server-side over HTTPS.
+5. Add rate limiting, temporary lockouts, session cookies (HttpOnly, Secure, SameSite),
+   audit logging, and a way to revoke accounts.
+6. Never use a "call code" as a substitute for a secure authentication factor.
+7. Remove this template from the public site if you deploy the portal.
+
+This file intentionally contains no real users or working access codes.
