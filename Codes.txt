@@ -1,2 +1,2 @@
-code1: YOUR_ACCESS_CODE
-name: Your Name
+code1: Ghtnbjjv
+name: Rohan
