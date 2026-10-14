@@ -1,0 +1,27 @@
+ROHANSWEB SPECIAL ACCESS — GOOGLE SHEETS CONNECTION
+
+Google Sheet:
+https://docs.google.com/spreadsheets/d/1IoO4DIkQYbmrWh2BH9B9ItAyrivcK1KJ7OWya_UuEv4/edit
+
+FILES
+- Code.gs: Apps Script backend connected to the spreadsheet above.
+- Index.html: access-code-only login.
+- Dashboard.html: personalised "Hi (name)!" dashboard.
+- index.html: GitHub homepage source copy.
+
+SETUP
+1. Open https://script.google.com/ and create a new Apps Script project.
+2. Copy Code.gs from this repository into the Apps Script editor.
+3. Add an HTML file named Index and paste the contents of Index.html.
+4. Add an HTML file named Dashboard and paste the contents of Dashboard.html.
+5. Select setupSheet in the Apps Script function menu and click Run. Approve access. This creates an AccessCodes tab in the spreadsheet if it is missing.
+6. In the AccessCodes tab, use columns Code | Name | Active. Add one user per row, for example:
+   YOUR_PRIVATE_CODE | Rohan | TRUE
+   Do not put real codes in this public GitHub repository.
+7. Deploy > New deployment > Web app. Choose Execute as: Me, and choose the narrowest suitable access setting.
+8. Open the deployment URL to use the working login. The HTML files in GitHub are source files; the secure sign-in uses the Apps Script runtime because it provides google.script.run.
+
+SECURITY
+- Keep the Google Sheet private and share only with trusted administrators.
+- Do not add real access codes to Codes.txt or any public repository file.
+- The Code column currently stores codes as plain text in the private sheet. Use unique codes and restrict sheet access.
